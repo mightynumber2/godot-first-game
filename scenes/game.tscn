@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://c4gktqdg4lmq5"]
+[gd_scene load_steps=13 format=3 uid="uid://c4gktqdg4lmq5"]
 
 [ext_resource type="PackedScene" uid="uid://b6ow5s5cwn1hl" path="res://scenes/player.tscn" id="1_v11yl"]
 [ext_resource type="Texture2D" uid="uid://c0oc0igulcgal" path="res://assets/sprites/world_tileset.png" id="2_thdnt"]
 [ext_resource type="PackedScene" uid="uid://dhuaa4kykxtq6" path="res://scenes/platform.tscn" id="3_8nghi"]
 [ext_resource type="PackedScene" uid="uid://dio7i277sqtbd" path="res://scenes/coin.tscn" id="4_pcc83"]
 [ext_resource type="PackedScene" uid="uid://dcmiet2rxit4p" path="res://scenes/killzone.tscn" id="5_8n6a5"]
+[ext_resource type="PackedScene" uid="uid://bguqlxurjncwo" path="res://scenes/slime.tscn" id="6_grinx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5d2ug"]
 texture = ExtResource("2_thdnt")
@@ -227,7 +228,7 @@ layer_2/tile_data = PackedInt32Array(196609, 0, 0, 196610, 0, 0, 262145, 0, 1, 2
 
 [node name="Player" parent="." instance=ExtResource("1_v11yl")]
 z_index = 5
-position = Vector2(32, 40)
+position = Vector2(493, 41)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(1, -5)
@@ -274,7 +275,7 @@ position = Vector2(796, -24)
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("3_8nghi")]
-position = Vector2(33, 12)
+position = Vector2(40, 13)
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("3_8nghi")]
 position = Vector2(377, 54)
@@ -284,3 +285,6 @@ libraries = {
 "": SubResource("AnimationLibrary_rihkv")
 }
 autoplay = "RESET"
+
+[node name="Slime" parent="." instance=ExtResource("6_grinx")]
+position = Vector2(531, 77)
