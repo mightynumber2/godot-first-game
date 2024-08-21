@@ -228,14 +228,13 @@ layer_2/tile_data = PackedInt32Array(196609, 0, 0, 196610, 0, 0, 262145, 0, 1, 2
 
 [node name="Player" parent="." instance=ExtResource("1_v11yl")]
 z_index = 5
-position = Vector2(493, 41)
+position = Vector2(44, 42)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(1, -5)
 zoom = Vector2(4, 4)
 limit_bottom = 120
 limit_smoothed = true
-position_smoothing_enabled = true
 
 [node name="Killzone" parent="." instance=ExtResource("5_8n6a5")]
 position = Vector2(81, 147)
